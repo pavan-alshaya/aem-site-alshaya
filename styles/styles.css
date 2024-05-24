@@ -233,3 +233,112 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
 }
+
+
+.footer-wrapper .footer > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.nav-sections ul li {
+    display: block;
+    font-size: 1.5rem;
+    color: #451400;
+    font-family: "TradeGothic LT Bold Regular", arial, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .12s;
+    position: relative;
+    margin-left: .5rem;
+    font-weight: bold !important;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.nav-tools p {
+  font-size: 1rem;
+  color: #451400;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-sections ul li:hover {
+  color: #9c1f16;
+  text-decoration: none;
+}
+
+.nav-sections ul li:hover::after {
+  background-color: #9c1f16;
+  width: 1.25rem;
+}
+
+.nav-sections ul li::after {
+    position: absolute;
+    bottom: -0.75rem;
+    content: "";
+    height: .25rem;
+    left: 0;
+    transition: width .18s;
+    width: 0;
+}
+
+nav .default-content-wrapper {
+  margin: 0;
+}
+
+header .nav-brand {
+  flex-basis: unset !important;
+}
+
+header nav#nav {
+  max-width: unset !important;
+
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  box-shadow: 0 10px 11px -5px rgba(0, 0, 0, .1019607843);
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: .0625rem solid #d7d7d7;
+  height: 100px !important;
+}
+
+.nav-brand picture img {
+  width: 4rem !important;
+}
+
+.nav-wrapper {
+  top: 3rem;
+}
+
+.header-wrapper, .banner-wrapper {
+  background-color:#f2f2f2;
+}
+
+main {
+  min-height: 70vh;
+}
+.banner-wrapper {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.banner-wrapper .default-content-wrapper {
+  max-width: unset;
+}
+.banner-wrapper .default-content-wrapper img {
+  width: 100%;
+}
+
+.footer-wrapper .section {
+  color: #451400;
+  font-weight: bold;
+}
+
+.contact-wrapper {
+  font-size: 1.5rem;
+}
