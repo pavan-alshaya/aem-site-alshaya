@@ -334,6 +334,7 @@ main {
 
 .banner-wrapper .default-content-wrapper img {
   width: 100%;
+  display: block;
 }
 
 .footer-wrapper .section {
@@ -343,4 +344,70 @@ main {
 
 .contact-wrapper {
   font-size: 1.5rem;
+}
+
+.section.top-level-menu .default-content-wrapper {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+}
+
+.section.top-level-menu .default-content-wrapper p {
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section.top-level-menu img {
+  max-height: 200px;
+  max-width: 300px;
+}
+
+
+@media (width <= 767px) {
+  .nav-wrapper {
+    top: unset !important;
+  }
+
+  header.header-wrapper nav#nav {
+    height: 80px !important;
+    grid-template-rows: 79px;
+    grid-gap: 3px;
+  }
+
+  .nav-brand picture img {
+    width: 3rem !important;
+  }
+
+  .nav-hamburger {
+    position: absolute;
+    left: 55px;
+  }
+
+  .section.banner-wrapper,
+  .section.top-level-menu {
+    padding: 0 !important;
+  }
+
+  .section.top-level-menu img {
+    max-height: 115px;
+    max-width: 115px;
+  }
+
+  footer .footer p {
+    line-height: 2.5;
+  }
+
+  .section.top-level-menu .default-content-wrapper > p {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100px;
+    padding-left: 2rem;
+  }
+
+  .footer-wrapper .footer.block > div {
+    display: block !important;
+  }
 }
