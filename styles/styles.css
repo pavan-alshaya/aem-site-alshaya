@@ -289,6 +289,14 @@ nav .default-content-wrapper {
   margin: 0;
 }
 
+.header.block {
+  width: 100%;
+  background: #f2f2f2;
+  display: block;
+  height: 3rem;
+  position: fixed;
+}
+
 header .nav-brand {
   flex-basis: unset !important;
 }
@@ -342,6 +350,16 @@ main {
   font-weight: bold;
 }
 
+footer .footer p {
+  line-height: 2.5;
+  cursor: pointer;
+}
+
+.section.connect-us img {
+  width: initial;
+  height: 2rem;
+}
+
 .contact-wrapper {
   font-size: 1.5rem;
 }
@@ -351,6 +369,8 @@ main {
   flex-flow: row;
   flex-wrap: wrap;
   flex: 1 1 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .section.top-level-menu .default-content-wrapper p {
@@ -393,10 +413,6 @@ main {
   .section.top-level-menu img {
     max-height: 115px;
     max-width: 115px;
-  }
-
-  footer .footer p {
-    line-height: 2.5;
   }
 
   .section.top-level-menu .default-content-wrapper > p {
