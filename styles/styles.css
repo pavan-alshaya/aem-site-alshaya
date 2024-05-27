@@ -298,7 +298,7 @@ header nav#nav {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  box-shadow: 0 10px 11px -5px rgba(0, 0, 0, 0.1020);
+  box-shadow: 0 10px 11px -5px #0000001a;
   position: sticky;
   z-index: 10;
   top: 0;
@@ -331,6 +331,7 @@ main {
 .banner-wrapper .default-content-wrapper {
   max-width: unset;
 }
+
 .banner-wrapper .default-content-wrapper img {
   width: 100%;
 }
