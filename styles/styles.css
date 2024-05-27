@@ -252,12 +252,12 @@ main .section.highlight {
 }
 
 .nav-tools p {
-  font-size: 1rem;
-  color: #451400;
   font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #451400;
+  font-size: .875rem;
+  letter-spacing: 1px;
+  font-family: "Nunito Regular", arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .nav-sections ul li:hover {
@@ -290,6 +290,7 @@ nav .default-content-wrapper {
   display: block;
   height: 3rem;
   position: fixed;
+  z-index: 2;
 }
 
 header .nav-brand {
@@ -370,10 +371,35 @@ footer .footer p {
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #451400;
+  font-size: 2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.section.top-level-menu .default-content-wrapper a {
+  font-weight: bold;
+  display: none;
+  color: #b68207;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  align-items: center;
+  position: absolute;
+  bottom: -1.5rem;
 }
 
 .section.top-level-menu img {
   max-width: 300px;
+}
+
+.section.top-level-menu .default-content-wrapper p:hover img {
+  scale: 1.1;
+}
+
+.section.top-level-menu .default-content-wrapper p:hover a {
+  display: block;
 }
 
 @media (width <= 767px) {
