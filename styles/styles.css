@@ -23,11 +23,11 @@
   --link-gold-color: #b68207;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: 'TradeGothicLTStdRegular', arial, sans-serif;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
-  --header-brand-primary-font-family: "TradeGothic LT Bold Regular", arial, sans-serif;
-  --header-brand-secondary-font-family:  "Nunito Regular", arial, sans-serif;
+  --fixed-font-family: 'TradeGothicLTStdRegular', arial, sans-serif;
+  --header-brand-primary-font-family: 'TradeGothicLTBoldRegular', arial, sans-serif;
+  --header-brand-secondary-font-family: 'Nunito-Regular', arial, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -151,8 +151,8 @@ a:any-link {
 }
 
 a:hover {
-  text-decoration: underline;
   color: var(--link-hover-color);
+  text-decoration: none;
 }
 
 /* buttons */
@@ -256,6 +256,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-family: var(--header-brand-primary-font-family);
   font-weight: bold;
   text-transform: uppercase;
   color: var(--brand-text-color);
@@ -288,27 +289,88 @@ main {
   display: block;
 }
 
-.our-source {
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--brand-text-color);
-  position: relative;
-  padding: 3rem 0;
-  margin-bottom: 1rem;
+.meat-table {
+  margin-bottom: 5rem;
 }
 
-.our-source p::after {
-  content: "\276F";
-  width: 2em;
-  height: 1em;
-  text-align: center;
-  transform: rotate(90deg);
-  font-size: 1.5rem;
-  margin-top: 6px;
-  position: absolute;
-  cursor: pointer;
+.meat-table .accordion details[open] {
+  transition: all 3s;
 }
+
+.meat-table .accordion details summary:focus, 
+.meat-table .accordion details summary:hover,
+.meat-table .accordion details[open] summary {
+  background-color:unset;
+}
+
+.meat-table .accordion details,
+.meat-table .accordion details[open] .accordion-item-body {
+  border: none;
+  border-top: unset;
+}
+
+.meat-table  .accordion-item {
+  text-align: center;
+}
+
+.meat-table  .accordion-item-label {
+  display: inline;
+  color: var(--brand-text-color);
+  font-family: var(--header-brand-primary-font-family);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* .meat-table  .accordion-item-label:hover::after {
+  animation: bounce .5s infinite;
+}
+
+@keyframes bounce {
+  25% {
+    transform: rotate(135deg) translate(0);
+  }
+
+  75% {
+    transform: rotate(140deg) translate(0);
+  }
+} */
+
+.meat-table .accordion details summary::after {
+  top: 45%;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  border-width: 5px 5px 0 0;
+}
+
+.meat-table .accordion details[open] summary::after {
+  transform: translateY(0%) rotate(-45deg);
+}
+
+.meat-table table tr {
+  display: flex;
+  line-height: 2.5;
+}
+.meat-table table tr {
+  font-family: "Nunito Regular", arial, sans-serif;
+  font-size: 1.25rem;
+}
+
+.meat-table table tr:first-child {
+  font-family: var(--header-brand-primary-font-family);
+}
+
+.meat-table table td {
+  border-bottom: .0625rem solid #d4cbc7;
+  text-align: left;
+  flex: 1;
+}
+
+.meat-table table {
+  width: 100%;
+  color: var(--brand-text-color);
+}
+
 
 @media (width <= 767px) {
   .banner-wrapper {
