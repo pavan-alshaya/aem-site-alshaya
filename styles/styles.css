@@ -350,8 +350,6 @@ main {
 .meat-table table tr {
   display: flex;
   line-height: 2.5;
-}
-.meat-table table tr {
   font-family: "Nunito Regular", arial, sans-serif;
   font-size: 1.25rem;
 }
