@@ -164,5 +164,13 @@
     .our-source {
       padding: 1rem;
     }
+
+    .meat-table .accordion-item-label {
+        font-size: 1.5rem;
+    }
+
+    .meat-table .accordion details summary::after {
+        right: 20px;
+    }
   }
   
