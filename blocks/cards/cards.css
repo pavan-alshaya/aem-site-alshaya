@@ -3,8 +3,6 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
-  grid-gap: 16px;
 }
 
 .cards > ul > li {
@@ -26,6 +24,86 @@
 
 .cards > ul > li img {
   width: 100%;
-  aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+/* custom styles for ingredients page */
+.ingredient-wrapper .cards > ul > li {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 13.75rem;
+}
+
+.ingredient-wrapper .cards > ul {
+  grid-template-columns: repeat(auto-fill, minmax(176px, 1fr));
+  padding: 4.6875rem 0;
+}
+
+.ingredient-wrapper .cards .cards-card-body {
+  font-family: var(--header-brand-primary-font-family);
+  font-weight: 700;
+  margin-top: 0.625rem;
+  font-size: 1.125rem;
+  letter-spacing: -0.28px;
+  text-align: center;
+  color: var(--brand-text-color)
+}
+.ingredient-wrapper .cards > ul > li:hover .cards-card-image img {
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+.ingredient-wrapper .cards .cards-card-image {
+  width: 7.8125rem;
+  height: 7.8125rem;
+}
+
+.ingredient-header {
+  margin-top: 1.25rem;
+  background: #f2f2f2;
+  display: grid;
+  justify-items: center;
+  padding: 1.25rem;
+  text-align: center;
+  border-bottom: 0.0625rem solid #d4cbc7;
+}
+
+.ingredient-header p {
+  color: var(--brand-text-color);
+  font-family: var(--brand-bold-font-family);
+  font-size: 2.125rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.ingredient-header p + p {
+  max-width: 55.9375rem;
+  font-size: 0.875rem;
+  line-height: 1.33;
+  font-family: var(--brand-light-font-family);
+  padding: 0 0.625rem;
+  font-weight: normal;
+}
+
+.ingredient-wrapper .cards-wrapper {
+  max-width: 68.75rem;
+}
+
+@media (width >= 900px) {
+  .ingredient-header {
+    margin-top: 5.3125rem;
+    padding: 3.75rem 0;
+  }
+  .ingredient-wrapper .cards > ul {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+  .ingredient-header p {
+    font-size: 4.375rem;
+    line-height: 1.2;
+  }
+  .ingredient-header p + p {
+    font-size: 1rem;
+  }
 }

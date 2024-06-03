@@ -28,6 +28,8 @@
   --fixed-font-family: 'TradeGothicLTStdRegular', arial, sans-serif;
   --header-brand-primary-font-family: 'TradeGothicLTBoldRegular', arial, sans-serif;
   --header-brand-secondary-font-family: 'Nunito-Regular', arial, sans-serif;
+  --brand-bold-font-family: 'TradeGothicLTCom-BdCn20', arial, sans-serif;
+  --brand-light-font-family: 'Nunito-Light', arial, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
