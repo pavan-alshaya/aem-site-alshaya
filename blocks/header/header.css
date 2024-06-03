@@ -59,6 +59,7 @@ header nav#nav[aria-expanded="true"] {
   display: flex;
   align-items: center;
   font-family: "Nunito Regular", arial, sans-serif;
+  cursor: pointer;
 }
 
 .nav-tools p img {
