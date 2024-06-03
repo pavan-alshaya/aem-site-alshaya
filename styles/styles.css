@@ -21,6 +21,9 @@
   --brand-text-color: #451400;
   --brand-text-secondary: #9c1f16;
   --link-gold-color: #b68207;
+  --whitish-grey: #f0f0f0;
+  --light-grey: #f2f2f2;
+  --dark-grey: #d4cbc7;
 
   /* fonts */
   --body-font-family: 'TradeGothicLTStdRegular', arial, sans-serif;
@@ -28,6 +31,8 @@
   --fixed-font-family: 'TradeGothicLTStdRegular', arial, sans-serif;
   --header-brand-primary-font-family: 'TradeGothicLTBoldRegular', arial, sans-serif;
   --header-brand-secondary-font-family: 'Nunito-Regular', arial, sans-serif;
+  --brand-bold-font-family: 'TradeGothicLTCom-BdCn20', arial, sans-serif;
+  --brand-light-font-family: 'Nunito-Light', arial, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
