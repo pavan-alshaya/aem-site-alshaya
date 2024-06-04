@@ -1,8 +1,3 @@
-:root {
-  --static-page-sub-heading: "Nunito-Bold";
-  --table-border: #dee2e6;
-}
-
 /* Static pages */
 .static-page {
   margin-top: 100px;

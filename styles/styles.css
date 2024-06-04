@@ -24,6 +24,7 @@
   --whitish-grey: #f0f0f0;
   --light-grey: #f2f2f2;
   --dark-grey: #d4cbc7;
+  --table-border: #dee2e6;
 
   /* fonts */
   --body-font-family: 'TradeGothicLTStdRegular', arial, sans-serif;
@@ -34,6 +35,7 @@
   --brand-bold-font-family: 'TradeGothicLTCom-BdCn20', arial, sans-serif;
   --brand-light-font-family: 'Nunito-Light', arial, sans-serif;
   --brand-catering-font-family: 'Helvetica Neue', sans-serif;
+  --static-page-sub-heading: "Nunito-Bold";
 
   /* body sizes */
   --body-font-size-m: 22px;
