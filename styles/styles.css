@@ -18,11 +18,24 @@
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
+  --brand-text-color: #451400;
+  --brand-text-secondary: #9c1f16;
+  --link-gold-color: #b68207;
+  --whitish-grey: #f0f0f0;
+  --light-grey: #f2f2f2;
+  --dark-grey: #d4cbc7;
+  --table-border: #dee2e6;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback;
+  --body-font-family: 'TradeGothicLTStdRegular', arial, sans-serif;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
+  --fixed-font-family: 'TradeGothicLTStdRegular', arial, sans-serif;
+  --header-brand-primary-font-family: 'TradeGothicLTBoldRegular', arial, sans-serif;
+  --header-brand-secondary-font-family: 'Nunito-Regular', arial, sans-serif;
+  --brand-bold-font-family: 'TradeGothicLTCom-BdCn20', arial, sans-serif;
+  --brand-light-font-family: 'Nunito-Light', arial, sans-serif;
+  --brand-catering-font-family: 'Helvetica Neue', sans-serif;
+  --static-page-sub-heading: "Nunito-Bold";
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -146,8 +159,8 @@ a:any-link {
 }
 
 a:hover {
-  text-decoration: underline;
   color: var(--link-hover-color);
+  text-decoration: none;
 }
 
 /* buttons */
@@ -208,17 +221,6 @@ main img {
 .icon img {
   height: 100%;
   width: 100%;
-}
-
-/* sections */
-main .section {
-  padding: 64px 16px;
-}
-
-@media (width >= 600px) {
-  main .section {
-    padding: 64px 32px;
-  }
 }
 
 @media (width >= 900px) {

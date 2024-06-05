@@ -1,0 +1,79 @@
+/* Static pages */
+.static-page {
+  margin-top: 100px;
+  padding: 24px;
+}
+
+.static-page .default-content-wrapper {
+  max-width: 80.25rem;
+}
+
+.static-page h1 {
+  font-size: 28px;
+  margin: 18px 0;
+  color: var(--brand-text-color);
+  font-family: var(--header-brand-primary-font-family);
+}
+
+.static-page p {
+  font-family: var(--header-brand-secondary-font-family);
+  color: var(--brand-text-color);
+  font-size: 14px;
+}
+
+.static-page p strong {
+  font-family: var(--static-page-sub-heading);
+}
+
+.find-chipotle p {
+  font-size: 24px;
+  color: var(--brand-text-color);
+  font-family: var(--header-brand-primary-font-family);
+}
+
+.static-page .table th {
+  background-color: var(--brand-text-color);
+  text-align: center;
+  color: var(--white);
+}
+
+.static-page .table th,
+.static-page .table td {
+  border-top: 1px solid var(--table-border);
+  font-size: 14px;
+  padding: 0.75rem;
+  vertical-align: top;
+}
+
+.static-page .table tbody tr {
+  border: 1px solid var(--table-border);
+}
+
+.static-page .table tbody tr p {
+  margin: 0;
+}
+
+.static-page .table.timelimit {
+  max-width: 380px;
+}
+
+.static-page ul {
+  font-family: var(--header-brand-secondary-font-family);
+  color: var(--brand-text-color);
+  font-size: 14px;
+}
+
+.static-page a {
+  text-decoration: underline;
+  color: var(--brand-text-color);
+}
+
+@media (width >= 900px) {
+  .static-page {
+    margin-top: 85px;
+  }
+
+  .find-chipotle img {
+    max-width: 37.5rem;
+  }
+}
