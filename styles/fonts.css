@@ -66,3 +66,11 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: Nunito-Bold;
+  src: url('../fonts/Nunito-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
